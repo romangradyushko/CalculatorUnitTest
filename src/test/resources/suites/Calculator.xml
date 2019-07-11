@@ -1,0 +1,85 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ <suite name="Calculator" verbose="1" parallel="classes" thread-count="16">
+  	
+   	<test name="SumDoubleTest">
+        <classes>
+            <class name="com.epam.calculator.operation.SumDoubleTest"></class>
+        </classes>
+    </test>
+    <test name="SumLongTest">
+        <classes>
+            <class name="com.epam.calculator.operation.SumLongTest"></class>
+        </classes>
+    </test>
+    <test name="SubDoubleTest">
+        <classes>
+            <class name="com.epam.calculator.operation.SubDoubleTest"></class>
+        </classes>
+    </test>
+    <test name="SubLongTest">
+        <classes>
+            <class name="com.epam.calculator.operation.SubLongTest"></class>
+        </classes>
+    </test>
+    <test name="MultDoubleTest">
+        <classes>
+            <class name="com.epam.calculator.operation.MultDoubleTest"></class>
+        </classes>
+    </test>
+    <test name="MultLongTest">
+        <classes>
+            <class name="com.epam.calculator.operation.MultLongTest"></class>
+        </classes>
+    </test>
+    <test name="DivDoubleTest">
+        <classes>
+            <class name="com.epam.calculator.operation.DivDoubleTest"></class>
+        </classes>
+    </test>
+    <test name="DivLongTest">
+        <classes>
+            <class name="com.epam.calculator.operation.DivLongTest"></class>
+        </classes>
+    </test>
+    <test name="PowDoubleTest">
+        <classes>
+            <class name="com.epam.calculator.operation.PowDoubleTest"></class>
+        </classes>
+    </test>
+    <test name="SqrtDoubleTest">
+        <classes>
+            <class name="com.epam.calculator.operation.SqrtDoubleTest"></class>
+        </classes>
+    </test>
+    <test name="CosDoubleTest">
+        <classes>
+            <class name="com.epam.calculator.operation.CosDoubleTest"></class>
+        </classes>
+    </test>
+    <test name="SinDoubleTest">
+        <classes>
+            <class name="com.epam.calculator.operation.SinDoubleTest"></class>
+        </classes>
+    </test>
+    <test name="TgDoubleTest">
+        <classes>
+            <class name="com.epam.calculator.operation.TgDoubleTest"></class>
+        </classes>
+    </test>
+    <test name="CtgDoubleTest">
+        <classes>
+            <class name="com.epam.calculator.operation.CtgDoubleTest"></class>
+        </classes>
+    </test>
+    <test name="IsPositiveBooleanTest">
+        <classes>
+            <class name="com.epam.calculator.operation.IsPositiveBooleanTest"></class>
+        </classes>
+    </test>
+    <test name="IsNegativeBooleanTest">
+        <classes>
+            <class name="com.epam.calculator.operation.IsNegativeBooleanTest"></class>
+        </classes>
+    </test>
+    
+</suite>
