@@ -1,6 +1,8 @@
-package com.epam.calculator.operation;
+package com.epam.calculator.operation.testng;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -8,10 +10,21 @@ import org.testng.annotations.Test;
 import com.epam.tat.module4.Calculator;
 
 public class IsNegativeBooleanTest {
-	protected Calculator calculator = new Calculator();
+	protected Calculator calculator;
+	@BeforeClass
+    public void setUp(){
+        calculator = new Calculator();
+        System.out.println("BeforeClass " + this.getClass().getSimpleName() + "run");
+    }
+	
+	@AfterClass
+    public void afterClass(){
+        calculator = null;
+        System.out.println("AfterClass " + this.getClass().getSimpleName() + "run");
+    }
 	
 	@Parameters({"first", "expected"})
-    @Test(dataProvider = "dataForTestBooleanIsNegative")
+    @Test(groups = {"positive"}, dataProvider = "dataForTestBooleanIsNegative")
     public void testBooleanIsNegative(long first, boolean expected){
         boolean negative = calculator.isNegative(first);
         Assert.assertEquals(negative, expected);
