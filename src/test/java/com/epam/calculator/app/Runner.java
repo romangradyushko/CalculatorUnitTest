@@ -1,5 +1,6 @@
 package com.epam.calculator.app;
 
+import org.junit.runners.JUnit4;
 import org.testng.TestListenerAdapter;
 import org.testng.TestNG;
 import org.testng.xml.XmlSuite;
@@ -22,5 +23,6 @@ public class Runner {
             add(xmlSuiteCalculator);
         }});
 		testNG.run();
+		
 	}
 }
